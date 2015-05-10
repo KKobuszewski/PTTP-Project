@@ -56,7 +56,7 @@ public class  PTTPClient
 			FileEvent data = (FileEvent) serverResponse;
 			fileOut.write( data.getFileData() );
 		} catch (ClassCastException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 			serverFiles = (List<String>) serverResponse;
 			for (int ii =0; ii < serverFiles.size(); ii++)
 				System.out.println(serverFiles.get(ii));
